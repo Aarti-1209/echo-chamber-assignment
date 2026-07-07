@@ -2,6 +2,17 @@
 
 A Streamlit web app built for MirAI School of Technology's Virtual Summer Internship 2026 — Assignment 1: The Identity Echo Interface.
 
+## Demo
+
+### Front Page
+![Front Page](screenshots/frontpage.png)
+
+### Successful Transmission
+![Successful Transmission with Metrics](screenshots/success.png)
+
+### Validation Warning
+![Validation Warning](screenshots/warning.png)
+
 ## Overview
 
 This app collects a user's Name and Message, waits for an execution command (Transmit button), and conditionally processes the input based on validation checks. It also includes an advanced feature that estimates the token cost of the submitted message.
@@ -16,6 +27,8 @@ This app collects a user's Name and Message, waits for an execution command (Tra
   - Empty Message (Name filled) → `st.warning()`
   - Both fields filled → `st.success()`
 - **Token Cost Estimator (Advanced Challenge)** — Calculates the message's character length and estimates token consumption (`characters / 4`), displayed via `st.info()`.
+- **Extra Metrics** — Character count, word count, and token estimate shown side by side using `st.metric()`.
+- **Transmission Log** — Keeps a session history of all successful transmissions using `st.session_state`.
 
 ## Tech Stack
 
@@ -23,29 +36,3 @@ This app collects a user's Name and Message, waits for an execution command (Tra
 - Streamlit
 
 ## How to Run Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/Aarti-1209/echo-chamber-assignment.git
-cd echo-chamber-assignment
-
-# Create and activate a virtual environment
-python -m venv venv
-venv\Scripts\Activate      # Windows
-source venv/bin/activate   # macOS/Linux
-
-# Install dependencies
-pip install streamlit
-
-# Run the app
-streamlit run app.py
-```
-
-The app will be available at `http://localhost:8501`.
-
-## Project Structure
-
-echo-chamber-assignment/
-- app.py — Main Streamlit application
-- requirements.txt — Python dependencies
-- README.md — Project documentation
