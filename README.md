@@ -5,7 +5,7 @@ A Streamlit web app built for MirAI School of Technology's Virtual Summer Intern
 ## Demo
 
 ### Front Page
-![Front Page](screenshot/frontpage.png)
+![Front Page](screenshot/front page.png)
 
 ### Successful Transmission
 ![Successful Transmission with Metrics](screenshot/success.png)
