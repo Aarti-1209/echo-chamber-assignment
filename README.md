@@ -44,3 +44,8 @@ streamlit run app.py
 The app will be available at `http://localhost:8501`.
 
 ## Project Structure
+
+echo-chamber-assignment/
+- app.py — Main Streamlit application
+- requirements.txt — Python dependencies
+- README.md — Project documentation
